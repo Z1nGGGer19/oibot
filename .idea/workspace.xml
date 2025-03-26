@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="85df2607-548d-447d-81c4-c491f0406ab2" name="Changes" comment="meow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiogram_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiogram_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/requests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/update_tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/update_tasks.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +21,10 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="oibot" />
+        <entry key="$PROJECT_DIR$" value="oibot0.1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -54,7 +57,7 @@
     "Python.update_tasks.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "oibot0.1",
+    "git-widget-placeholder": "oibot0.3",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/pycharm/lyonya",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
@@ -87,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742132514298</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="meow">
+      <option name="closed" value="true" />
+      <created>1742986384614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742986384614</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
