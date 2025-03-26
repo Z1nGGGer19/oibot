@@ -35,3 +35,15 @@ def get_list_by_tasks(data):
     for task in data:
         tasks.append(f"✅ {task.get('name')}") if task.get('solved_by_me') else tasks.append(f"❌ {task.get('name')}")
     return "\n".join(tasks)
+
+def get_message(new_tasks):
+    session = get_session()
+    login(session)
+    message = 'Таски обновились'
+    for i in new_tasks:
+        task = get_task_by_id(session, i)
+        message += f'\nНазвание: {task.get("name")}\n'
+        message += f'Категория: {task.get("category")}\n'
+        message += f'Описание: {task.get("description")}\n'
+        message += '\n'
+    return message
