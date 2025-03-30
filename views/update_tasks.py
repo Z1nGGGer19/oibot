@@ -8,24 +8,24 @@ from Config import config
 
 async def update_tasks():
     while True:
-        print("обнова")
-        data = parser.request_to_tasks()
-        if not await requests.get_task_count():
-            await requests.add_task(0)
-            print("добавил в бд")
-            continue
-
-        if await requests.get_task() != len(data):
-            new_tasks = parser.check_list_of_tasks(data)
-            message = parser.get_message(new_tasks)
-            await requests.update_first_task_value(len(data))
-            for user in await requests.get_users():
-                try:
-                    await bot.send_message(user.user_id, message)
-                except Exception as e:
-                    print(f"Не удалось отправить сообщение пользователю {user.user_id}: {e}")
-        await asyncio.sleep(5)
-
+        try:
+            print("обнова")
+            data = parser.request_to_tasks()
+            if not await requests.get_task_count():
+                await requests.add_task(0)
+                print("добавил в бд")
+                continue
+        except:
+            if await requests.get_task() != len(data):
+                new_tasks = parser.check_list_of_tasks(data)
+                message = parser.get_message(new_tasks)
+                await requests.update_first_task_value(len(data))
+                for user in await requests.get_users():
+                    try:
+                        await bot.send_message(user.user_id, message)
+                    except Exception as e:
+                        print(f"Не удалось отправить сообщение пользователю {user.user_id}: {e}")
+            await asyncio.sleep(5)
 
 async def info_message():
     for i in config.ID:
