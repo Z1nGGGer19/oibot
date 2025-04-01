@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 from Config import config
 
 CREDENTIALS = {
-    "name": "Плескачев Рома",
-    "password": "Roma23001025!",
+    "name": "",
+    "password": "",
     "_submit": "Войти",
 }
 
