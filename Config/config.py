@@ -1,4 +1,4 @@
-token='7632888212:AAFhXRn6hyV3XoLBPYAXFml6RPa5vL_Livo'
+token=''
 BASE_URL = "https://ib.sut.ru"
 LOGIN_URL = f"{BASE_URL}/login"
 CHALLENGES_URL = f"{BASE_URL}/api/v1/challenges"
