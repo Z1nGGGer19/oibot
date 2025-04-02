@@ -15,7 +15,6 @@ async def update_tasks():
                 await requests.add_task(0)
                 print("добавил в бд")
                 continue
-        except:
             if await requests.get_task() != len(data):
                 new_tasks = parser.check_list_of_tasks(data)
                 message = parser.get_message(new_tasks)
@@ -26,6 +25,8 @@ async def update_tasks():
                     except Exception as e:
                         print(f"Не удалось отправить сообщение пользователю {user.user_id}: {e}")
             await asyncio.sleep(5)
+        except: 
+            continue
 
 async def info_message():
     for i in config.ID:
